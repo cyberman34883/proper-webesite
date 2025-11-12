@@ -1,0 +1,47 @@
+<html>
+<title>sigma boy</title>
+<!<style>
+body:{
+background-color:black
+}
+</style>>
+	<body style="background-color:black">
+		<h1 style="color:#FFFFFF"> what is your name </h1>
+		<h1 style="color:white"> BBNO$ </h1>
+		
+		<input id="name" placeholder="hello world">yolyo</input>
+		<p></p>
+		<button type="button" onclick="die()">submit</button>
+		<p id="valid_res" style="color:#FF19B5"></p>
+		<img src="d.jpg" alt="koalas" id="image1"></img>
+	</body>
+	<script>
+	function hide_image(idOfImage){
+		const HideImage = document.getElementById(idOfImage);
+		HideImage.style.display = "none";
+	}
+	hide_image("image1");
+		function die(){
+			let isVis = false
+			let x = document.getElementById("name").value;
+			const myImg = document.getElementById("image1");
+			console.log(x);
+			let text;
+			if (x.toLowerCase() != "oliver"){
+				text = "you're not oliver";
+				IsVis = false;
+			} else{
+				text = "hello oliver welcome to the website";
+				isVis = true;
+			}
+			document.getElementById("valid_res").innerHTML = text;
+			if (isVis){
+				myImg.style.display = "block";
+			} else {
+				myImg.style.display = "none";
+			}
+		}
+		states_dictionary={ "CT":["alex","harry"], "AK":["liza","alex"], "TX":["fred", "harry"] };
+		console.log(states_dictionary["CT"]);
+	</script>
+</html>
